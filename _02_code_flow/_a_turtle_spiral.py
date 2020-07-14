@@ -12,14 +12,22 @@ if __name__ == '__main__':
     window.bgcolor('white')
     
     # Make a new turtle
-    
+    nathan = turtle.Turtle()
     # This code sets our shape to a turtle
-    
+    nathan.shape('turtle')
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    
+    nathan.speed(10)
     # Set your turtle's color using .color('green')
-    
+    nathan.color('green')
     # Use a loop to repeat a the code below 50 times
+    for i in range(50):
+        nathan.color(getRandomColor())
+        nathan.forward(5*i)
+        nathan.right(360/7)
+        nathan.width(i)
+        
+        
+        
         
         # Set the turtle color to a random color
 
