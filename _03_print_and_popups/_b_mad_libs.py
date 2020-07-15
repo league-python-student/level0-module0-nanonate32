@@ -4,21 +4,21 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     
     # Make a new window variable, window = Tk()
-    
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     #// Put this sentence in a pop-up message box:
-    
+    messagebox.showinfo(prompt = "If you find yourself having to cross a piranha-infested river, here's how to do it...")
     # Get the player to enter an adjective
-     
+    simpledialog.askstring(title = None , prompt = 'Enter an adjective')
     # Get the player to enter a type of liquid
-    
+    simpledialog.askstring(title = None , prompt = 'Enter a type of liquid')
     # Get the player to enter a body part
-     
+    simpledialog.askstring(title = None , prompt = 'Enter a body part')
     # Get the player to enter a verb
-     
+    simpledialog.askstring(title = None , prompt = 'Enter a verb')
     # Get the player to enter a place
-    
+    simpledialog.askstring(title = None , prompt = 'Enter a place')
     # The story below has has been written as a group of Strings joined together by + signs.
     # The story contains place holders, indicated by [** **] which you need to replace with
     # the values entered by the player.

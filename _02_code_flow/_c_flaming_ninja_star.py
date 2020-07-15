@@ -19,15 +19,28 @@ if __name__ == '__main__':
     flameSize = 130;        # the length of the flaming arms
     
     # Make a new turtle
-    
+    nathan = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    nathan.shape('turtle')  
     # Set the turtle width to 2
-    
+    nathan.width(2)   
     # Set the turtle speed to 0 (fastest)
-    
+    nathan.speed(0)   
     # Use a for loop to repeat all of the code below ONE time (we will change this later)
-        
+    for i in range (25):
+        nathan.fillcolor('blue')
+        nathan.begin_fill()
+        nathan.right(45)
+        nathan.forward(64) 
+        nathan.left(40)
+        nathan.forward(flameSize) 
+        nathan.right(170)
+        nathan.forward(flameSize)
+        nathan.right(62)
+        nathan.forward(baseSize)
+        nathan.end_fill()
+        nathan.hideturtle() 
+        nathan.pencolor('red')  
         # Set the turtle .fillcolor() to orange
         
         # Call the turtle .begin_fill() function

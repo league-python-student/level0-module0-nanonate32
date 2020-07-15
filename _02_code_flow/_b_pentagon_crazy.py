@@ -1,5 +1,6 @@
 import random
 import turtle
+from _ast import For
 
 # Returns a random color!
 def getRandomColor():
@@ -26,11 +27,19 @@ if __name__ == '__main__':
     # Set the turtle width to 1
     nathan.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    sides = 5()
+    sides = 5
     # Create a variable to be the angle of 360 divided by the sides variable
     angle = 360/sides
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
+        if(i == 100):
+            nathan.setWidth(2)
+        if(i == 200 ):
+            nathan.setWidth(3)
+        nathan.pencolor(getNextColor(i))
+        nathan.forward(i)
+        nathan.right(angle + 1)
+        nathan.hideturtle()
         # If the loop variable (i) is equal to 100, set the turtle width to 2
         
         # If the loop variable (i) is equal to 200, set the turtle width to 3
